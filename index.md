@@ -1,27 +1,47 @@
 
 ---
 
-[Methane Gas Leak Detection; PrecisionHawk](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true" width="100" height="60" />
+##### Methane Gas Leak Detection
+
+PrecisionHawk
+
+[Details](/phDesc)
+<img src="images/dummy_thumbnail.jpg?raw=true" width="200" height="120" />
 
 ---
 
-[Template Extraction & Anomoly Detection on Log Messages; Hewlett Packard Enterprise](http://example.com/)
-<img src="images/hp_thumbnail.png?raw=true" width="100" height="60" />
+##### Template Extraction & Anomaly Detection on Log Messages
+
+Hewlett Packard Enterprise
+
+[Details](/hpeDesc)
+<img src="images/hp_thumbnail.png?raw=true" width="200" height="120" />
 
 ---
 
-[Automatic Speech Recognition Research; Purdue University](/pdf/sample_presentation.pdf)
-<img src="images/sr_thumbnail.jpg?raw=true" width="100" height="60" />
+##### Automatic Speech Recognition Research
+
+Purdue University
+
+[Details](/srDesc)
+<img src="images/sr_thumbnail.jpg?raw=true" width="200" height="120" />
 
 ---
 
-[Tympanic Membrane disease Detection; Safkan Health](http://example.com/)
-<img src="images/saf_thumbnail.jpg?raw=true" width="100" height="60" />
+##### Tympanic Membrane Disease Detection
+
+Safkan Health
+
+[Details](/safDesc)
+<img src="images/saf_thumbnail.jpg?raw=true" width="200" height="120" />
 
 ---
 
-[Automatic Text Summarizer & Analyzer; SwiftSummarizer](http://example.com/)
-<img src="images/ss_2.png?raw=true" width="100" height="60" />
+##### Text Summarizer & Analyzer
+
+SwiftSummarizer
+
+[Details](/ssDesc)
+<img src="images/ss_2.png?raw=true" width="200" height="120" />
 
 ---
