@@ -1,31 +1,21 @@
-## This can be your internal website page / project page
+## Methane Gas Leak Detection
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+##### PrecisionHawk | Data Scientist
+**Business Problem:** Oil and Gas Factories can have methane gas leaking out of components. This is damaging to the environment and also incredibly costly to companies. I built a detector for Methane Gas Plumes
 
-### 1. Suggest hypotheses about the causes of observed phenomena
+**Solution Highlights:** 
+  * Built Methane Gas Leak Detector pipeline including preprocessing, feature extraction, model architecture, and inference. Created Video Stabilization model to correct drone camera jitters and movements. Leveraged Optical Flow feature matching with Affine and Homography transforms to achieve precise video alignment.
+  * Refactored core Object Detection Deep Learning Model (YOLO architecture, PyTorch) and reintegrated all dependencies after 1+ year leading to an mAP increase of 5%. Integrated Bayesian hyperparameter optimization to updated model.  
+  * Developed Aerial-based oriented bounding box modeling for Object Detection Model, leading to an increase of 8% in Intersection over Union (IOU).  
+  * Implemented Distributed Data caching using custom Samplers enabling parallel GPU computing. Leads to substantial reduction of computational expenses for model training.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
+**Write-up:** 
 
-### 2. Assess assumptions on which statistical inference will be based
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
+ewlifjewoifejf....
 
-### 3. Support the selection of appropriate statistical tools and techniques
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+###### All Intellectual Property of this work belongs to PrecisionHawk and therefore I cannot show any code.
 
-### 4. Provide a basis for further data collection through surveys or experiments
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
