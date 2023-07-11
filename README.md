@@ -1,4 +1,4 @@
 Shaan Luthra Machine Learning Portfolio
 
-[Portfolio](https://www.shaanluthra1.github.io.com)
+[Portfolio](https://www.shaanluthra1.github.io)
 
