@@ -1,13 +1,14 @@
 title: Shaan Luthra # your name (or website title) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-
+  
+  <a href="https://www.linkedin.com/in/shaanluthra/">LinkedIn</a> 
+  <br>
   Machine Learning Engineer with a proven track record of successfully leading the entire lifecycle of model pipelines, collaborating closely with engineering teams to ensure seamless integration with existing infrastructure, and deploying production-ready scalable systems.
   <br><br>
   I have a deep understanding of statistical models and can recognize various architectures and transformations needed to fit different data sources. This combined with my extensive experience  with frameworks such as TensorFlow, and PyTorch, enables me to effectively implement state-of-the-art models and deliver scalable solutions.
   <br><br>
   I have consistently taken on leadership roles in previous projects and jobs, coordinating with stakeholders, mentoring junior team members, and fostering a collaborative and results-oriented work environment.  <br><br>
   <br><br>
-  <a href="https://www.linkedin.com/in/shaanluthra/">LinkedIn</a> 
   
   
 remote_theme: pages-themes/minimal@v0.2.0
