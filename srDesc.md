@@ -1,31 +1,41 @@
-## This can be your internal website page / project page
+## Automatic Child Speech Recognition Research
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+##### Purdue University Research | Deep Learning Lead
+**Business Problem:** Currently, no such system exists and current speech recognition systems are only about 20% accurate with transcribing young children’s speech.
 
-### 1. Suggest hypotheses about the causes of observed phenomena
+**Solution Highlights:** 
+  * Key leader and contributor in all phases of project life-cycle including data preprocessing, augmentation, feature selection, modeling, validation, and inference.
+  * Identified and implemented methods like noise reduction, filter transformations, spectrograms, Mel-Frequency Cepstral Coefficient features, and more in order to build out signal processing infrastructure.  
+  * Led Deep Learning team of 4 researchers and built a Deep Convolutional-LSTM Model with Tensorflow achieving a phonetic accuracy of 87%. 
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+**Write-up:** 
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
+Over the course of this research, I constructed the entire Preprocessing and Feature Extraction pipelines. I also served as the head of the Deep Learning team in which I led 3 other students.
 
-### 2. Assess assumptions on which statistical inference will be based
+Below is a high-level diagram of our Model Architecture.
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
+<img src="images/sr_diagram.jpg?raw=true" width="550" height="400" />
 
-### 3. Support the selection of appropriate statistical tools and techniques
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+Our preprocessing pipeline consists of two main phases. The first is a noise reduction algorithm is applied to the audio signal. This helps to remove excess noise through spectral gating.
 
-### 4. Provide a basis for further data collection through surveys or experiments
+The next big step of preprocessing is applying a pre-emphasis filter to the audio signal. Pre-emphasis filters help by balancing the frequency spectrum, avoids errors during fourier transforms, and can improve the signal to noise ratio.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Below are 2 graphs. The first shows the original audio signal and the second graph shows the audio signal after going through the preprocessing pipeline:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<img src="images/sr_preproc.png?raw=true" width="550" height="300" />
+
+
+After the audio signal has been preprocessed we are able to split the signal and transcript in tandem based on previously obtained alignment times. For this system, we are using a phonetic based model. Once each phonetic is split into the respective audio signal time segments, we can derive the Mel Frequency Cepstral Coefficients (MFCC). This can be done with the following steps:
+
+<img src="images/sr_mfcc.png?raw=true" width="550" height="300" />
+
+These MFCC features will be used as the input for our Deep Learning Model.
+
+The architecture of the Deep Learning Model is a Convolutional-LSTM Network. The model will start with several convolutional layers which work to identify relationships between the spacial audio features. The output of the Convolutional layers are passed to a bidirectional LSTM layer which focuses on patterns in the sequences of features.
+
+Currently our models Phonetic test accuracy is at 87.56%. 
+
+###### All Intellectual Property of this work belongs to Purdue University and therefore I cannot show any code.
+
+
