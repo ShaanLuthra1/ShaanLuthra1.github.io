@@ -1,31 +1,36 @@
-## This can be your internal website page / project page
+## Text Summarizer & Analyzer
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+##### SwiftSummarizer | Creator
+**Business Problem:** Free Tool to Summarize and get key insights into any piece of text. 
 
-### 1. Suggest hypotheses about the causes of observed phenomena
+**Solution Highlights:** 
+  * Summarizer uses PyTorch and Transformers to encode semantic meanings of sentences which are fed into a clustering algorithm to create a robust summary. Key insights generated with NLP methods, spacy, transformers.
+  * Responsible for building Django Web App and integrating the backend with a ReactJS frontend. Used Django REST framework, passed data via AJAX calls. Deployed using Git-LFS and PythonAnywhere.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+**Write-up:** 
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
+Built Django Web App and all Machine Learning models. I was also responsible for compiling the entire system and pushing it into Production. While Deployed, Swift Summarizer averaged about 400 page views per month.
 
-### 2. Assess assumptions on which statistical inference will be based
+The summarizer model was built using Pytorch. The first step was to separate the article into sentences and preprocess all text. From there, we can use a word embedding model to get the semantic meaning of each word in a vectorized format. Each word embedding is joined to form the original sentences and we now have a sentence embedding.
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
+These sentence embeddings are fed into an unsupervised clustering model which is able to accurately construct a robust summary. The various insights like identifying key phrases, rare words, names, and locations are generated using various Natural Language Processing methods, the spacy library, and the transformers model.
 
-### 3. Support the selection of appropriate statistical tools and techniques
+On the Web App side, I built the Django Web App and integrated the backend with a ReactJS frontend. To pass data from the client-side to the backend, I used Django REST framework and AJAX calls. I deployed the finished product using Git-LFS and PythonAnywhere.
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+Below is a walkthrough on how the app works.
 
-### 4. Provide a basis for further data collection through surveys or experiments
+You will first be prompted to paste in an article that you want summarized. You can also upload an image and the OCR algorithm will convert the image to text to then be used for summarization. You would then select a summary size and hit submit to generate a summary and key insights.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+<img src="images/ss_1.png?raw=true" />
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+After hitting submit, you will see that a summary has been generated.
+
+<img src="images/ss_2.png?raw=true" />
+
+Along with a summary, Swift Summarizer also provides insights like key phrases, rare words, names, and any locations found in the article.
+
+<img src="images/ss_3.png?raw=true" />
+
+###### All Intellectual Property of this work belongs to Purdue University and therefore I cannot show any code.
+
+
