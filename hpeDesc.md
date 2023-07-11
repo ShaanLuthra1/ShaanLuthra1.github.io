@@ -1,31 +1,26 @@
-## This can be your internal website page / project page
+## Template Extraction & Anomaly Detection of Log Messages 
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+##### Hewlett Packard Enterprise | Data Science Intern 
+**Business Problem:** When customers have system failures support engineers would have to spend hours of time looking through log messages to troubleshoot any error or failure. My work was to find a solution to identify these harmful messages and save time.
 
-### 1. Suggest hypotheses about the causes of observed phenomena
+**Solution Highlights:** 
+  * Developed a full model pipeline that took unstructured log messages and leveraged Hierarchical  Clustering based template extraction to transform 4 million unique log messages into 84 templates.  
+  * Increased efficiency of support engineers identifying harmful log messages by over 30% in weekly ticket completions.  
+  * Implemented an Unsupervised anomaly detection algorithm to identify harmful log messages based on auto-embeddings of extracted templates. 
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
+**Write-up:** 
 
-### 2. Assess assumptions on which statistical inference will be based
 
-```javascript
-if (isAwesome){
-  return true
-}
-```
+This work was done as a Data Science Intern at Hewlett Packard Enterprise. I worked on the Primary Storage Customer Engineering Team.
 
-### 3. Support the selection of appropriate statistical tools and techniques
+The first step of this process was to perform template extraction on all log messages. Template Extraction works by vectorizing log messages and using hierarchal clustering to find common patterns between log messages. Using the template extraction model I created, we were able to turn a dataset of 3 million different log messages into 84 templates.
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+By having our log messages in template format makes our dataset much more compatible for log sequence anomaly detection. Along with the pattern template, we can also use the unique attributes of the original log message as additional features.
 
-### 4. Provide a basis for further data collection through surveys or experiments
+When running anomaly detection on sequences of log messages, we are able to easily identify rare log messages that may appear.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+###### All Intellectual Property of this work belongs to Hewlett Packard Enterprise and therefore I cannot show any code.
+
+
