@@ -21,9 +21,9 @@ For this model, we are using Tensorflow. Within Tensorflow, we use the Keras Ima
 
 Once our images are preprocessed and augmented, we solidify the features we will be using. For this system, we will use the pixel values from the images as features. There are 3 channels per image, representing the RGB spectrum.
 
-The last step before training our Deep Learning model is to normalize the data between the [0, 1] range. Our model architecture is based off of a Convolutional Neural Network. Since we are working with a relatively small dataset, we decide to use transfer learning with the ResNet Model. The ResNet model has been trained on a large image classification dataset and can be fine-tuned to this specific task. Essentially, we can use the already-learned feature maps to generalize to this problem.
+Our model architecture is based off of a Convolutional Neural Network. Since we are working with a relatively small dataset, we decide to use transfer learning with the ResNet Model. The ResNet model has been trained on a large image classification dataset and can be fine-tuned to this specific task. Essentially, we can use the already-learned feature maps to generalize to this problem.
 
-The results for the model are 86% test accuracy.
+The results for the model are 91% test accuracy.
 
 
 ###### All Intellectual Property of this work belongs to Safkan Health and therefore I cannot show any code.
