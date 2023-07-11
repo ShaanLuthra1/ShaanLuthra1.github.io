@@ -5,8 +5,8 @@
 
 PrecisionHawk
 
-[Details](/phDesc)
-<img src="images/dummy_thumbnail.jpg?raw=true" width="200" height="120" />
+[<img src="images/dummy_thumbnail.jpg?raw=true" width="200" height="120" />](/phDesc)
+
 
 ---
 
